@@ -15,7 +15,7 @@
 		<div class="h4 mb-5">список задач на сегодня</div>
 
 		<!-- List of tasks -->
-		<div class="card mb-4">
+		<div class="card mb-4" id="card">
 			<ul id="tasksList" class="list-group list-group-flush">
 
 				<li id="emptyList" class="list-group-item empty-list">
@@ -23,7 +23,7 @@
 					<div class="empty-list__title">Список дел пуст</div>
 				</li>
 
-				<li class="list-group-item d-flex justify-content-between task-item">
+				<!-- <li class="list-group-item d-flex justify-content-between task-item" id="notEnemyList">
 					<span class="task-title">Купить молоко</span>
 					<div class="task-item__buttons">
 						<button type="button" data-action="done" class="btn-action">
@@ -33,7 +33,7 @@
 							<img src="./img/cross.svg" alt="Done" width="18" height="18">
 						</button>
 					</div>
-				</li>
+				</li> -->
 
 			</ul>
 		</div>
@@ -48,7 +48,7 @@
 						<input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required>
 						<small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small>
 					</div>
-					<button type="submit" class="btn btn-primary  btn-lg active">Добавить</button>
+					<button id="formButton" type="submit" class="btn btn-primary  btn-lg active">Добавить</button>
 				</form>
 			</div>
 		</div>
